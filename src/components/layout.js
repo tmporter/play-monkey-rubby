@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
         <main style={{ flex: 5 }}>{children}</main>
         <Footer style={{ flex: 1 }}>
           <p>
-            Built by{" "}
+            Send me more name suggestions on twitter at{" "}
             <a
               href="https://twitter.com/fleetfoxx"
               target="_blank"
@@ -44,10 +44,15 @@ const Layout = ({ children }) => {
             >
               @fleetfoxx
             </a>
+            .
           </p>
           <p>
             Thanks to{" "}
-            <a href="https://www.reddit.com/r/PaymoneyWubby/comments/mwyfxl/i_compiled_some_of_the_nicknames_from_chats_donos/">
+            <a
+              href="https://www.reddit.com/r/PaymoneyWubby/comments/mwyfxl/i_compiled_some_of_the_nicknames_from_chats_donos/"
+              target="_blank"
+              rel="noreferrer"
+            >
               u/OneMostSerene
             </a>{" "}
             for compiling a list of the best donos.
