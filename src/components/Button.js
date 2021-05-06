@@ -11,9 +11,19 @@ const Button = styled.button`
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  }
 
   &:active {
+    color: white;
     background: rebeccapurple;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   }
 `
 

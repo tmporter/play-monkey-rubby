@@ -1,8 +1,7 @@
 import React, { useState } from "react"
-import Button from "./Button"
-import names from "../names.json"
 import { getRandomIntInclusive } from "../utilities"
-import { StaticImage } from "gatsby-plugin-image"
+import RandomEmoteButton from "./RandomEmoteButton"
+import names from "../names.json"
 
 const RandomNameSpinner = () => {
   const [pay, setPay] = useState("Play")
@@ -25,9 +24,11 @@ const RandomNameSpinner = () => {
       }}
     >
       <h1 style={{ fontSize: "4vw" }}>{`${pay} ${money} ${wubby}`}</h1>
-      <Button style={{minWidth: "6rem"}} type="button" onClick={handleClick}>
-        <StaticImage src="../images/wubby7.png" alt="Spin" height={32} />
-      </Button>
+      
+      <RandomEmoteButton
+        style={{ minWidth: "6rem" }}
+        onClick={handleClick}
+      />
     </div>
   )
 }
