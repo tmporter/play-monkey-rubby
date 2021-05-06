@@ -8,8 +8,8 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Footer from "./Footer"
 
-import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,24 +25,39 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          display: "flex",
+          flexDirection: "column",
+          height: "100vh",
         }}
       >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+        <main style={{ flex: 5 }}>{children}</main>
+        <Footer style={{ flex: 1 }}>
+          <p>
+            Built by{" "}
+            <a
+              href="https://twitter.com/fleetfoxx"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @fleetfoxx
+            </a>
+          </p>
+          <p>
+            Thanks to{" "}
+            <a href="https://www.reddit.com/r/PaymoneyWubby/comments/mwyfxl/i_compiled_some_of_the_nicknames_from_chats_donos/">
+              u/OneMostSerene
+            </a>{" "}
+            for compiling a list of the best donos.
+          </p>
+          <p>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.com">Gatsby</a>
+          </p>
+        </Footer>
       </div>
     </>
   )
