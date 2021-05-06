@@ -26,7 +26,7 @@ const RandomNameSpinner = () => {
     >
       <h1 style={{ fontSize: "4vw" }}>{`${pay} ${money} ${wubby}`}</h1>
       <Button style={{minWidth: "6rem"}} type="button" onClick={handleClick}>
-        <StaticImage src="../images/wubby7.png" height={32} />
+        <StaticImage src="../images/wubby7.png" alt="Spin" height={32} />
       </Button>
     </div>
   )

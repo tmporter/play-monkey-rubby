@@ -11,6 +11,10 @@ const Button = styled.button`
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  &:active {
+    background: rebeccapurple;
+  }
 `
 
 export default Button
